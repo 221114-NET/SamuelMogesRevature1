@@ -1,0 +1,25 @@
+
+======== Mini Max Sum ============ 
+	//First convet everything to long since our constraints bigger than int range, we need to convert it to long
+        List<long> myLongArr = new List<long>();
+        
+        foreach(int x in arr){
+            myLongArr.Add(x);
+        }
+        /*since i don't know the order, I'll use the C# mehtods to get some of 
+        the array. Then subtract the max to get the minimum sum */
+        long sum = myLongArr.Sum();
+        
+        //then subtract the minimum integer to get the maximum sum.
+        long minInt = myLongArr.Min();
+        
+        //then subtract the minimum integer to get the maximum sum
+        long maxSum = sum-minInt;
+        
+        /// Now to get the minSum
+        long maxInt = myLongArr.Max();
+        
+        //then substract the maximum integer to get the minimum sum
+        long minSum = sum -maxInt;
+        
+        Console.WriteLine($"{minSum} {maxSum}");
