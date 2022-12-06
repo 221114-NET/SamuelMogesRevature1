@@ -1,9 +1,9 @@
   
-========= Grading Students ================
+========= Grading Students Solution ================
 public static List<int> gradingStudents(List<int> grades)
     {
-        // I used for loop to check the student grades in the list and control the flow statement for specific iteration 
-        // and I used count method to return the total number of student grades.
+        // Used for-loop to check the student grades in the list and control the flow statement for specific iteration 
+        // and I used the Count method to return the total number of student grades.
         for (int i = 0; i < grades.Count; i++)
         {
             //assign item variable to list of grades 
@@ -11,7 +11,7 @@ public static List<int> gradingStudents(List<int> grades)
             if (score >=38) // this condition limits only for those student pass
             {
                 //if the above condition meets, do this math to check if the score's next multiple of 5 is less than 3.
-                // use % modulo to take the remainer and subtract it from 5 and the take that different and if the diff is less than 3 round up to te next multiple of 5.
+                // use % modulo to take the remainder and subtract it from 5 and then take that difference.If the difference is less than 3 rounds up to the next multiple of 5.
                 var diff = 5 - (score % 5);
                 if (diff < 3)
                 {
