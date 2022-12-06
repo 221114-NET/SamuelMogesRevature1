@@ -22,4 +22,4 @@ public static List<int> gradingStudents(List<int> grades)
         }
         return grades;
     }
-}
+
